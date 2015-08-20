@@ -1,0 +1,6 @@
+pem=~/path/to/pem/mySite.pem
+hostName=0.0.0.0
+username=ubuntu
+remoteRootDir=/data/www
+mountDir=/mnt
+mountName=MySite
