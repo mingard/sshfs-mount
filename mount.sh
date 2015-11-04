@@ -13,6 +13,7 @@ do
                 ssh-add "$pem"
                 mkdir "$dir"
                 sshfs -o reconnect "$username"@"$hostName":/"$remoteRootDir"  "$dir" -oauto_cache,reconnect,defer_permissions,negative_vncache,noappledouble,volname="$mountName"
+                echo "Connected to " $hostName
             fi
         fi
 done
