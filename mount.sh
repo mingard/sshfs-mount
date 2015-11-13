@@ -1,7 +1,8 @@
 #!/bin/bash
-for file in config/*
+path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
+for file in $path/config/*
 do
-        if [ $file = 'config/'$2'.mount' ];
+        if [ $file = $path'/config/'$2'.mount' ];
         then
             source $file
             dir="$mountDir"'/'"$mountName"
