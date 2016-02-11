@@ -12,7 +12,7 @@ A quick way to mount and unmount volumes with SSHFS
 
 #Using an alias on OSX
 
-1. [sudo] pico /etc/bashrc
+1. `[sudo] pico /etc/bashrc`
 2. add   ```MOUNT_DIR="/path/to/mount/mount.sh"
 MOUNT=". /path/to/mount/mount.sh mount"
 UNMOUNT=". /path/to/mount/mount.sh unmount"```
