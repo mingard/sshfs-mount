@@ -13,10 +13,10 @@ A quick way to mount and unmount volumes with SSHFS
 #Using an alias on OSX
 
 1. `[sudo] pico /etc/bashrc`
-2. add   ```MOUNT_DIR="/path/to/mount/mount.sh"
-MOUNT=". /path/to/mount/mount.sh mount"
-UNMOUNT=". /path/to/mount/mount.sh unmount"```
-3. Now in terminal you no longer need to `cd` to the directory first. Simply run `$MOUNT {configFileName}` or `$UNMOUNT {configFileName}` e.g. `$MOUNT my-site`.
+2. add `MOUNT_DIR="/path/to/mount/mount.sh"` to the bottom of the file
+3. add `MOUNT=". /path/to/mount/mount.sh mount"` to the bottom of the file
+4. finally, add `UNMOUNT=". /path/to/mount/mount.sh unmount"` to the bottom and save
+5. Now in terminal you no longer need to `cd` to the directory first. Simply run `$MOUNT {configFileName}` or `$UNMOUNT {configFileName}` e.g. `$MOUNT my-site`.
 
 Special thanks to [@jean-luc](https://github.com/jean-luc) and [@nivlaps](https://github.com/nivlaps) for debugging
 
