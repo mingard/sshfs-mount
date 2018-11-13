@@ -1,16 +1,16 @@
 # sshfs-mount
 A quick way to mount and unmount volumes with SSHFS
 
-##Install
+## Install
 1. Install [SSHFS and Fuse](http://osxfuse.github.io/)
 2. Create a config .mount file in the config folder, making sure that the local directory you specify exists and is writable
 
-#Run
+# Run
 
 1. To mount, navigate to the root of the mount app. Run `. mount.sh mount {configFileName}`
 2. To unmount, do exactly the same, but substitute `mount` for `unmount`
 
-#Using an alias on OSX
+# Using an alias on OSX
 
 1. `[sudo] pico /etc/bashrc`
 2. add `MOUNT_DIR="/path/to/mount/mount.sh"` to the bottom of the file
